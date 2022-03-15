@@ -103,9 +103,9 @@ else:
 # da AWS caso sim, pede o diretório, o arquivo na AWS e
 # o nome que sará dado ao arquivo baixado. Então faz
 # download do arquivo no diretório e com o nome escolhido.
-download_aws = input("Você deseija fazer download de algum arquivo do AWS?\n (1)Sim (2)Não\n")
+download_aws = input("Você deseja fazer download de algum arquivo do AWS?\n (1)Sim (2)Não\n")
 if download_aws == "1":
-    diretorio = input("selecione o diretório destino")
+    diretorio = input("selecione o diretório destino:")
     nome_arquivo = input("Nome do arquivo AWS:")
     nome_arquivo_destino = input("Nome do arquivo destino:")
     dir_cep = (diretorio+"\\"+nome_arquivo_destino)
@@ -114,21 +114,3 @@ elif download_aws == "2":
     pass
 else:
     print("Valor inválido.")
-
-
-
-
-
-
-
-
-dir = sorted(os.listdir(diretorio))
-
-
-
-
-for files in dir:
-    print(files)
-# write_json()
-# download_file()
-
